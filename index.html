@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karachi Mart is Karachi's premier neighborhood supermarket offering fresh chakki atta, dairy, fruits, vegetables, and household essentials with rapid delivery across Karachi, Sindh, Pakistan.">
+  <meta name="keywords" content="Karachi Mart, Karachi supermarket, grocery delivery Karachi, chakki atta, basmati rice, Dalda cooking oil, fresh vegetables Karachi">
+  <meta name="author" content="Karachi Mart">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Karachi Mart — Supermarket Website">
+  <meta property="og:description" content="Fresh groceries, daily staples, and household cleaning delivered straight to your home across Karachi with Cash on Delivery.">
+  <meta property="og:site_name" content="Karachi Mart">
+  
+  <title>Karachi Mart — Supermarket Website | Fresh Groceries in Karachi</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Karachi Delivery Announcement">
+    <div class="container announcement-inner">
+      <div>
+        🚚 <strong>Free Express Delivery in Karachi</strong> on all orders over Rs. 2,000! Standard flat rate Rs. 150.
+      </div>
+      <div class="demo-disclaimer-pill">
+        🛡️ Fictional Portfolio Project • Cash on Delivery Demo
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header" id="main-header">
+    <div class="container header-main">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" id="header-brand-logo" aria-label="Karachi Mart Homepage">
+        <div class="brand-icon-box">🛒</div>
+        <div class="brand-text">
+          <span class="brand-title">Karachi<span>Mart</span></span>
+          <span class="brand-subtitle">Fresh & Friendly Supermarket</span>
+        </div>
+      </a>
+
+      <!-- Location Selector Pill -->
+      <button type="button" class="location-selector-btn" id="header-location-btn" title="Choose your Karachi delivery area">
+        <span>📍</span>
+        <span>Delivering to: <strong id="selected-location-text">Gulshan-e-Iqbal</strong></span>
+        <span style="font-size: 0.75rem; color: var(--color-text-muted);">▼</span>
+      </button>
+
+      <!-- Search Field -->
+      <div class="header-search-wrap">
+        <form class="header-search-form" id="header-search-form" role="search">
+          <input 
+            type="search" 
+            id="header-search-input" 
+            class="header-search-input" 
+            placeholder="Search atta, rice, oil, milk, tea, snacks..." 
+            aria-label="Search Karachi Mart products"
+            autocomplete="off"
+          >
+          <button type="submit" class="header-search-submit" aria-label="Submit search">
+            🔍
+          </button>
+        </form>
+      </div>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="#tracking" class="header-action-btn" id="header-tracking-btn">
+          <span>📦</span>
+          <span>Track Order</span>
+        </a>
+
+        <button type="button" class="header-action-btn cart-btn" data-action="open-cart" id="header-cart-btn" aria-label="View Shopping Cart">
+          <span>🛒</span>
+          <span style="font-weight: 700;">Cart</span>
+          <span class="cart-badge cart-badge-count" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Secondary Navigation -->
+    <nav class="header-nav" aria-label="Product categories navigation">
+      <div class="container">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#shop" class="nav-link">Shop All</a></li>
+          <li><a href="#shop?category=grocery-staples" class="nav-link">🌾 Groceries & Staples</a></li>
+          <li><a href="#shop?category=fruits-vegetables" class="nav-link">🥦 Fruits & Vegetables</a></li>
+          <li><a href="#shop?category=dairy-eggs" class="nav-link">🥛 Dairy & Eggs</a></li>
+          <li><a href="#shop?category=beverages" class="nav-link">🧃 Beverages & Chai</a></li>
+          <li><a href="#shop?category=snacks-biscuits" class="nav-link">🍪 Snacks & Biscuits</a></li>
+          <li><a href="#shop?category=household-cleaning" class="nav-link">🧼 Household Cleaning</a></li>
+          <li><a href="#shop?category=frozen-food" class="nav-link">❄️ Frozen Food</a></li>
+          <li><a href="#shop?category=bakery" class="nav-link">🍞 Bakery</a></li>
+          <li>
+            <a href="#shop?sale=true" class="nav-link" style="color: var(--color-accent-700);">
+              🔥 Hot Deals <span class="nav-badge-new">SALE</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Application Router Viewport -->
+  <main id="app-content" tabindex="-1">
+    <!-- Rendered dynamically by Router & App.js -->
+    <div style="min-height: 60vh; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; color: var(--color-text-muted);">
+      Loading Karachi Mart Supermarket...
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <!-- Brand & Mission -->
+      <div class="footer-brand">
+        <div class="footer-brand-title">Karachi<span>Mart</span></div>
+        <p class="footer-brand-desc">
+          Karachi's trusted neighbourhood supermarket demo. Delivering farm-fresh produce, authentic cooking oils, flours, dairy, and household essentials across Sindh's capital.
+        </p>
+        <div style="font-size: 0.85rem; color: #94a3b8; background: rgba(255, 255, 255, 0.05); padding: 0.75rem; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.1);">
+          🛡️ <strong>Demo Project Notice:</strong> Fictional e-commerce experience designed for portfolio evaluation. Not accepting real payments.
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="footer-heading">Shop Groceries</h4>
+        <div class="footer-links">
+          <a href="#shop?category=grocery-staples" class="footer-link">Groceries & Staples</a>
+          <a href="#shop?category=fruits-vegetables" class="footer-link">Fruits & Vegetables</a>
+          <a href="#shop?category=dairy-eggs" class="footer-link">Dairy & Farm Eggs</a>
+          <a href="#shop?category=beverages" class="footer-link">Beverages & Chai</a>
+          <a href="#shop?category=frozen-food" class="footer-link">Frozen Foods</a>
+          <a href="#shop?sale=true" class="footer-link">Discounted Promotions</a>
+        </div>
+      </div>
+
+      <!-- Customer Service -->
+      <div>
+        <h4 class="footer-heading">Customer Care</h4>
+        <div class="footer-links">
+          <a href="#tracking" class="footer-link">Track Your Order</a>
+          <a href="#cart" class="footer-link">Shopping Cart</a>
+          <a href="#checkout" class="footer-link">Cash on Delivery</a>
+          <a href="#about" class="footer-link">About Karachi Mart</a>
+          <a href="#contact" class="footer-link">Contact Store</a>
+        </div>
+      </div>
+
+      <!-- Policies -->
+      <div>
+        <h4 class="footer-heading">Information</h4>
+        <div class="footer-links">
+          <a href="#privacy" class="footer-link">Privacy Policy</a>
+          <a href="#terms" class="footer-link">Terms and Conditions</a>
+          <a href="#contact" class="footer-link">Store Locations</a>
+          <a href="#about" class="footer-link">Delivery Areas</a>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h4 class="footer-heading">Store & Hub</h4>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <span>Plot 42-C, Main Rashid Minhas Rd, Gulshan-e-Iqbal, Karachi</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📞</span>
+          <span>+92 (21) 111-MART-99 (Demo)</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>💬</span>
+          <span>WhatsApp: +92 300 0000000</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>⏰</span>
+          <span>Open Daily: 8:00 AM – 11:30 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <div>
+        © 2026 Karachi Mart Supermarket. Fictional Portfolio Project.
+      </div>
+
+      <!-- Live Database Status Switcher -->
+      <button type="button" class="footer-db-status" id="footer-db-btn" title="View Database Connection Details & Supabase Setup">
+        <span class="footer-db-dot" id="footer-db-dot"></span>
+        <span id="footer-db-text">Database: Demo Mode (Seed Data)</span>
+        <span style="font-size: 0.7rem; opacity: 0.7;">⚙️</span>
+      </button>
+
+      <div>
+        <a href="#privacy">Privacy</a> • <a href="#terms">Terms</a> • <a href="#contact">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="drawer" id="cart-drawer" aria-labelledby="drawer-cart-title" role="dialog" aria-modal="true">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span style="font-size: 1.3rem;">🛒</span>
+        <h3 id="drawer-cart-title" style="font-size: 1.15rem; font-weight: 700;">Shopping Basket</h3>
+      </div>
+      <button type="button" class="modal-close-btn" id="close-cart-btn" aria-label="Close cart drawer">&times;</button>
+    </div>
+    <div class="drawer-body" id="drawer-cart-body">
+      <!-- Rendered dynamically -->
+    </div>
+    <div class="drawer-footer" id="drawer-cart-footer">
+      <!-- Rendered dynamically -->
+    </div>
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickview-overlay">
+    <div class="modal-content" id="quick-view-modal" role="dialog" aria-modal="true">
+      <button type="button" class="modal-close-btn" id="close-quickview-btn" aria-label="Close modal">&times;</button>
+      <div id="quick-view-body">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Karachi Delivery Location Selector Modal -->
+  <div class="modal-overlay" id="location-modal-overlay">
+    <div class="modal-content" id="location-modal" style="max-width: 520px;" role="dialog" aria-modal="true">
+      <button type="button" class="modal-close-btn" id="close-location-btn" aria-label="Close modal">&times;</button>
+      <div style="margin-bottom: 1.25rem;">
+        <span class="section-subtitle">Local Delivery</span>
+        <h3 style="font-size: 1.35rem; font-weight: 800; margin-top: 0.25rem;">Select Your Karachi Area</h3>
+        <p style="font-size: 0.88rem; color: var(--color-text-muted);">
+          Choose your neighbourhood to view localized delivery estimates and available stock.
+        </p>
+      </div>
+      <div class="filter-list" id="location-areas-list" style="max-height: 380px; overflow-y: auto; padding-right: 0.5rem;">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Database & Supabase Configuration Modal -->
+  <div class="modal-overlay" id="db-status-overlay">
+    <div class="modal-content" id="db-status-modal" style="max-width: 560px;" role="dialog" aria-modal="true">
+      <button type="button" class="modal-close-btn" id="close-db-status-btn" aria-label="Close modal">&times;</button>
+      <div id="db-status-body">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main ES Module Application Script -->
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

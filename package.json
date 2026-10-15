@@ -1,0 +1,21 @@
+{
+  "name": "karachi-mart-supermarket",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Karachi Mart - Modern Supermarket Customer Website with Supabase CRM integration ready",
+  "scripts": {
+    "dev": "powershell -ExecutionPolicy Bypass -File ./server.ps1",
+    "start": "powershell -ExecutionPolicy Bypass -File ./server.ps1",
+    "build": "echo 'Karachi Mart is zero-dependency vanilla ES modules ready for static hosting!' && exit 0"
+  },
+  "keywords": [
+    "karachi",
+    "supermarket",
+    "ecommerce",
+    "supabase",
+    "crm",
+    "pakistan"
+  ],
+  "author": "Karachi Mart Developer",
+  "license": "MIT"
+}
